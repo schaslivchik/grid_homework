@@ -86,6 +86,8 @@ img {
   border:1px solid #E1E5EA;
   border-radius: 4px 0 0 4px;
   margin-right: -1px;
+  height: 100%;
+  min-height: 52px;
 }
 .subscribe-form input:focus-visible {
   outline-color: transparent;
@@ -101,7 +103,7 @@ input::placeholder {
   border-radius: 0 4px 4px 0;
 }
 .nav-main-top-wraper {
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .fa-chevron-down,
 .fa-chevron-right{
@@ -145,6 +147,7 @@ nav ul a {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 0 15px;
 }
 .title-top {
   font-size: 4rem;
@@ -196,6 +199,9 @@ nav ul a {
   align-items: center;
   justify-content: space-between;
 }
+.trusted-teams li {
+  padding: 15px;
+}
 .text-center {
   text-align: center;
 }
@@ -204,7 +210,7 @@ nav ul a {
   margin-bottom: 20px;
 }
 .container-inner-teams {
-  padding: 80px 0 100px;
+  padding: 60px 15px 80px;
 }
 .p-container {
   padding: 80px 0;
@@ -225,6 +231,7 @@ nav ul a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
 }
 .inner-content > li:first-child {
   padding-right: 15px;
@@ -285,11 +292,15 @@ p {
 }
 footer .inner-content {
   align-items: flex-start;
+  justify-content: space-between;
 }
 footer p,
 .footer-block,
 .footer-block a{
   color: #fff;
+}
+.footer-block a {
+  display: inline-block;
 }
 .footer-block a:hover {
   color: var(--primary-color)
@@ -310,7 +321,7 @@ footer .footer-block .google-play-btn {
   background-color: var(--text-color-light);
 }
 .container-all-rights {
-  padding: 15px 0;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,4 +334,17 @@ footer .footer-block .google-play-btn {
 }
 .social-media li:not(:last-child) {
   margin-right: 24px;
+}
+.btn-bars {
+  display: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.fa-bars {
+  font-size: 2rem;
+}
+.txt-menu {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
